@@ -257,16 +257,117 @@ h1 {
   right: 12px;
 }
 
+.impact-section {
+  padding: 70px 5vw 56px;
+  background: #f4f7fb;
+}
+
+.impact-section h2 {
+  max-width: 650px;
+  margin-bottom: 32px;
+  color: var(--ink);
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+.impact-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 28px;
+  border-top: 4px solid var(--blue);
+  background: var(--white);
+  box-shadow: 0 8px 20px rgba(22, 31, 84, 0.08);
+}
+
+.impact-card h3 {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 21px;
+}
+
+.impact-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.impact-icon {
+  flex-shrink: 0;
+  color: var(--blue);
+  font-size: 28px;
+}
+
+.impact-card p {
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.impact-link {
+  margin-top: auto;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.impact-link:hover,
+.impact-link:focus-visible {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
 footer {
+  padding: 28px 5vw 24px;
+  border-top: 1px solid #e5e7f2;
+  color: var(--muted);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto 22px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer-navigation {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-navigation a {
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus-visible {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.scroll-prompt {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 24px;
+  padding: 24px 24px 8px;
   color: var(--blue);
   font-size: 10px;
   letter-spacing: 2px;
-  text-align: center;
 }
 
 .subscribe-button-wrap {
@@ -356,6 +457,11 @@ footer {
   footer {
     gap: 6px;
     letter-spacing: 1.5px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 14px;
   }
 
   .subscribe-button-wrap {
